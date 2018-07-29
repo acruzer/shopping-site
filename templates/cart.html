@@ -12,14 +12,27 @@
             <th>Total</th>
         </tr>
         </thead>
+
         <tbody>
+
+            {% for melon in cart_melons %}
+
+            
         <tr>
-            <td>Ancient Watermelon</td>
-            <td>5</td>
-            <td>$3.00</td>
-            <td>$15.00</td>
+            <td>{{ cart_melons[melon].common_name }} </td>
+            <td>{{ cart_melons[melon] }}</td>
+            <td>{{ cart_melon.price }}</td>
+            <td></td>
         </tr>
-        <tr>
+
+            
+
+            {% endfor %}
+
+        
+
+
+        <!-- <tr>
             <td>Charleston Gray</td>
             <td>2</td>
             <td>$2.00</td>
@@ -36,9 +49,10 @@
             <td>2</td>
             <td>$3.00</td>
             <td>$6.00</td>
-        </tr>
+        </tr> -->
         </tbody>
     </table>
+
 
     <h3>Total: $27.00</h3>
 
